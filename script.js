@@ -265,9 +265,9 @@ function generatePrompt() {
     const lighting = lightingStyles[environment];
     const pose = poses[Math.floor(Math.random() * poses.length)];
 
-    const mainPrompt = `ultra realistic photograph, beautiful ${ethnicity} female bodybuilder with ${bodyType} physique and ${breastSize} proportions ${pose} wearing ${outfit} in ${environment}, ${camera}, natural skin details, professional photography`;
+    const mainPrompt = `raw photograph, photorealistic portrait of a ${ethnicity} female bodybuilder, ${bodyType} physique, ${breastSize} proportions, ${pose}, wearing ${outfit}, in ${environment}, ${camera}, natural skin pores and texture, subsurface scattering, detailed facial features, shot on Kodak Portra 400, high-end fashion photography, natural lighting, 8k uhd, highly detailed skin`;
 
-    const negativePrompt = "cartoon, 3d render, cgi, illustration, art, artificial, plastic, anime, digital art, drawing, unrealistic, bad anatomy, deformed, low quality, blurry, text";
+    const negativePrompt = "painting, drawing, illustration, glitch, deformed, mutated, cross-eyed, ugly, disfigured, poorly drawn, mutation, mutated, extra limb, ugly, poorly drawn hands, missing limb, floating limbs, disconnected limbs, malformed hands, blur, out of focus, long neck, long body, ((out of frame)), mutated hands and fingers, poorly drawn face, poorly drawn feet, poorly drawn hands, missing fingers, extra fingers, fused fingers, bad anatomy, bad proportions, gross proportions, double vision, multiple views, blurry, watermark, text, grainy, signature, cut off, draft, amateur drawing, cartoon, 3d render, anime, manga, digital art";
 
     document.getElementById('mainPrompt').textContent = mainPrompt;
     document.getElementById('negativePrompt').textContent = negativePrompt;
