@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDXL Prompt Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SDXL Japanese Bodybuilder Prompt Generator</h1>
+        
+        <div class="form-group">
+            <h2>Customize Your Subject</h2>
+            <label for="bodyType">Body Type Balance:</label>
+            <select id="bodyType">
+                <option value="athletic-muscular">Athletic-Muscular</option>
+                <option value="chubby-muscular">Chubby-Muscular</option>
+                <option value="lean-muscular">Lean-Muscular</option>
+            </select>
+
+            <label for="breastSize">Breast Size:</label>
+            <select id="breastSize">
+                <option value="modest">Modest</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+
+            <label for="ethnicity">Ethnicity:</label>
+            <select id="ethnicity">
+                <option value="Japanese">Japanese</option>
+                <option value="Korean">Korean</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Malaysian">Malaysian</option>
+            </select>
+
+            <label for="outfit">Outfit Style:</label>
+            <div class="outfit-toggle">
+                <button onclick="toggleOutfitMode()" id="outfitToggle">Toggle Outfit Style</button>
+                <span id="outfitModeLabel">Current: Modest Style</span>
+            </div>
+            <select id="outfit">
+                <!-- Options will be populated by JavaScript -->
+            </select>
+
+            <label for="environment">Environment:</label>
+            <select id="environment">
+                <option value="competition stage">Competition Stage</option>
+                <option value="professional gym">Professional Gym</option>
+                <option value="outdoor training area">Outdoor Training Area</option>
+            </select>
+        </div>
+
+        <div class="button-group">
+            <button onclick="generatePrompt()">Generate Prompt</button>
+            <button onclick="generateRandomPrompt()" class="random-btn">Generate Random Prompt</button>
+        </div>
+
+        <div class="output">
+            <h3>Generated Prompt:</h3>
+            <div class="prompt-box">
+                <h4>Realistic Photograph Prompt:</h4>
+                <p id="mainPrompt"></p>
+                <h4>Negative Prompt:</h4>
+                <p id="negativePrompt"></p>
+            </div>
+            <button onclick="copyPrompt()">Copy to Clipboard</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

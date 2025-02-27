@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    color: #666;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.output {
+    margin-top: 30px;
+}
+
+.prompt-box {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+.prompt-box h4 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.prompt-box p {
+    color: #666;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.button-group button {
+    flex: 1;
+    margin: 0;
+}
+
+.random-btn {
+    background-color: #2196F3;
+}
+
+.random-btn:hover {
+    background-color: #1976D2;
+}
+
+.outfit-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.outfit-toggle button {
+    width: auto;
+    padding: 8px 15px;
+    margin: 0;
+}
+
+#outfitModeLabel {
+    color: #666;
+    font-size: 0.9em;
+} 
